@@ -1,0 +1,58 @@
+{
+  "team": "รีเทค",
+  "team_code": "006-022",
+  "model": "DecisionTreeClassifier(max_depth=3, random_state=42)",
+  "model_file": "telco_churn.joblib",
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "SeniorCitizen",
+    "Contract_One year",
+    "Contract_Two year",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check"
+  ],
+  "feature_kinds": {
+    "tenure": "numeric",
+    "MonthlyCharges": "numeric",
+    "TotalCharges": "numeric",
+    "SeniorCitizen": "binary",
+    "Contract_One year": "binary",
+    "Contract_Two year": "binary",
+    "InternetService_Fiber optic": "binary",
+    "InternetService_No": "binary",
+    "PaperlessBilling_Yes": "binary",
+    "PaymentMethod_Credit card (automatic)": "binary",
+    "PaymentMethod_Electronic check": "binary",
+    "PaymentMethod_Mailed check": "binary"
+  },
+  "numeric_ranges": {
+    "tenure": {
+      "min": 0.0,
+      "max": 72.0
+    },
+    "MonthlyCharges": {
+      "min": 18.25,
+      "max": 118.75
+    },
+    "TotalCharges": {
+      "min": 18.8,
+      "max": 8684.8
+    }
+  },
+  "scaled": false,
+  "scaling_note": "ข้อมูลของทีมไม่ได้สเกล → ส่งค่าที่กรอกเข้าโมเดลได้เลย",
+  "target": {
+    "1": "ลูกค้ายกเลิกบริการ (Churn)",
+    "0": "ยังใช้บริการอยู่"
+  },
+  "threshold": 0.5,
+  "test_accuracy": 0.7871,
+  "cv_accuracy": 0.7901,
+  "n_rows": 7043
+}
